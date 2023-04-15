@@ -20,5 +20,4 @@ const productNotExist = function(products) {
 }
 
 let Resault = productNotExist(productItems)
-
 console.log(Resault)
