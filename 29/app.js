@@ -4,11 +4,11 @@
 
 //p.remove()
 
-const ps = document.querySelectorAll('p')
-console.log(ps)
+const ps = document.querySelectorAll("p");
+console.log(ps);
 
-ps.forEach(function(item){
-   // item.remove()
-   //console.log(item.textContent)
-   item.textContent = 'updated P'
-})
+ps.forEach(function (item) {
+  // item.remove()
+  //console.log(item.textContent)
+  item.textContent = "updated P";
+});
