@@ -1,8 +1,8 @@
-let validEmail = true
-let validPassword = false
+let validEmail = true;
+let validPassword = false;
 
-if(validEmail && validPassword){
-    console.log("logged in")
-} else if (validEmail || validPassword){
-    console.log("is correct")
+if (validEmail && validPassword) {
+  console.log("logged in");
+} else if (validEmail || validPassword) {
+  console.log("is correct");
 }

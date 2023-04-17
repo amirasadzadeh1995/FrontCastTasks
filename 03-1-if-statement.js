@@ -1,10 +1,9 @@
-let age = 12
+let age = 12;
 
-
-if (age>20){
-console.log("is young")
+if (age > 20) {
+  console.log("is young");
 }
 
-if (age<20){
-    console.log("is child")
+if (age < 20) {
+  console.log("is child");
 }

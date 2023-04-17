@@ -1,5 +1,5 @@
-const tasks = [`task1`, 12, true]
+const tasks = [`task1`, 12, true];
 
-console.log(tasks.length)
+console.log(tasks.length);
 
-console.log(tasks[1])
+console.log(tasks[1]);

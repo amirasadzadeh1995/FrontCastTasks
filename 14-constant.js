@@ -1,9 +1,7 @@
 const userInfo = {
-    id:2
-}
-    
+  id: 2,
+};
 
+userInfo.id = 44;
 
-userInfo.id = 44
-
-console.log(userInfo)
+console.log(userInfo);

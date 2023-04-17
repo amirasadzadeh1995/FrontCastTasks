@@ -1,23 +1,28 @@
-const productItems = [{
+const productItems = [
+  {
     title: `book1`,
-    exist:true
-},{
+    exist: true,
+  },
+  {
     title: `book2`,
-    exist:false
-},{
+    exist: false,
+  },
+  {
     title: `book3`,
-    exist:true
-},{
+    exist: true,
+  },
+  {
     title: `book4`,
-    exist:false
-},{
-}]
+    exist: false,
+  },
+  {},
+];
 
-const productNotExist = function(products) {
-    return products.filter(function(item){
-    return !item.exist 
-} )
-}
+const productNotExist = function (products) {
+  return products.filter(function (item) {
+    return !item.exist;
+  });
+};
 
-let Resault = productNotExist(productItems)
-console.log(Resault)
+let Resault = productNotExist(productItems);
+console.log(Resault);
