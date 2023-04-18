@@ -1,27 +1,8 @@
-let products = [];
+let products = getSaveProducts();
 
 const filters = {
   searchItem: "",
   availableProducts: false,
-};
-
-const renderProducts = function (products, filters) {
-  let filteredProducts = products.filter(function (item) {
-    return item.title.toLowerCase().includes(filters.searchItem.toLowerCase());
-  });
-  filteredProducts = filteredProducts.filter(function (item) {
-    if (filters.availableProducts) {
-      return item.exist;
-    } else {
-      return true;
-    }
-  });
-  document.querySelector("#products").innerHTML = "";
-  filteredProducts.forEach(function (item) {
-    const productEl = document.createElement("p");
-    productEl.textContent = item.title;
-    document.querySelector("#products").appendChild(productEl);
-  });
 };
 
 renderProducts(products, filters);
@@ -41,7 +22,7 @@ document
       title: e.target.elements.productTitle.value,
       exist: true,
     });
-    localStorage.setItem("products", JSON.stringify(products));
+    saveProducts(products);
     renderProducts(products, filters);
     e.target.elements.productTitle.value = "";
   });
