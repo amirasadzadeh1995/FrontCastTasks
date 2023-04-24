@@ -62,6 +62,7 @@ const createProductDOM = function (product) {
   });
 
   productItem.textContent = product.title;
+  productItem.setAttribute(`href`, `./edit-product.html#${product.id}`);
   productEl.appendChild(productItem);
 
   removeButton.textContent = "Remove";
