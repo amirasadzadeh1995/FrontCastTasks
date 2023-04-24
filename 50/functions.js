@@ -20,7 +20,7 @@ const removeProduct = function (id) {
   }
 };
 
-const toglleProduct = function (id) {
+const toggleProduct = function (id) {
   const product = products.find(function (item) {
     return item.id === id;
   });
@@ -55,9 +55,8 @@ const createProductDOM = function (product) {
   checkBox.setAttribute("type", "checkbox");
   checkBox.checked = !product.exist;
   productEl.appendChild(checkBox);
-
-  checkBox.addEventListener("change", function () {
-    toglleProduct(product.id);
+  checkBox.addEventListener(`change`, function () {
+    toggleProduct(product.id);
     saveProducts(product);
     renderProducts(products, filters);
   });
