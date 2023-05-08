@@ -27,7 +27,7 @@ createProduct = () => {
         title: `new book`,
         price: 8000,
       });
-      const error = true;
+      const error = false;
       if (!error) {
         resolve();
       } else {
@@ -36,8 +36,8 @@ createProduct = () => {
     }, 3000);
   });
 };
-createProduct()
-  .then(getProducts)
-  .catch((err) => {
-    console.log(err);
-  });
+async function getData() {
+  await createProduct();
+  getProducts();
+}
+getData();
