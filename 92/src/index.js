@@ -1,10 +1,10 @@
-const product = "book 2";
-console.log(product);
+const product = "book 2 ";
+// console.log(product);
 
-class user {
+class users {
   userInfo() {
     return "amirasd";
   }
 }
-const username = new user();
+const username = new users();
 console.log(username.userInfo());
